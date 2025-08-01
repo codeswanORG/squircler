@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🟦 Squircler
 
 **The first React component that renders TRUE mathematical squircles with perfect tension control.**
@@ -232,3 +233,7 @@ MIT © [Silver J. Teichman](https://github.com/codeswanORG) - **CODESWAN** brand
 *Bringing mathematical precision to web design*
 
 </div>
+=======
+# squircler
+Squircler brings authentic Apple-style squircles to the web. Unlike CSS border-radius approximations, Squircler uses real mathematical Bézier curves to create true superellipse shapes with precise tension control.
+>>>>>>> 00dd0e59172d1ab4b00c67bbd0ca06638a91e583
