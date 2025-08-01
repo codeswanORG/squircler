@@ -1,6 +1,6 @@
 {
   "name": "squircler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🟦 The first React component that renders TRUE mathematical squircles with perfect tension control",
   "main": "dist/squircler.umd.js",
   "module": "dist/squircler.es.js",
