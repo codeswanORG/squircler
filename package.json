@@ -1,0 +1,74 @@
+{
+  "name": "squircler",
+  "version": "1.0.0",
+  "description": "🟦 The first React component that renders TRUE mathematical squircles with perfect tension control",
+  "main": "dist/squircler.umd.js",
+  "module": "dist/squircler.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "vite build --mode lib",
+    "preview": "vite preview",
+    "test": "vitest",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "keywords": [
+    "squircle",
+    "react",
+    "component",
+    "svg",
+    "ui",
+    "shape",
+    "superellipse",
+    "tension",
+    "mathematical",
+    "bezier",
+    "curves",
+    "glass",
+    "modern"
+  ],
+  "author": {
+    "name": "Silver J. Teichman",
+    "email": "silver@codeswan.org",
+    "url": "https://codeswan.org"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeswanORG/squircler.git"
+  },
+  "homepage": "https://codeswan.org",
+  "bugs": {
+    "url": "https://github.com/codeswanORG/squircler/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.3",
+    "vitest": "^1.4.0"
+  },
+  "dependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}

@@ -1,0 +1,45 @@
+# .npmignore
+# Development files
+src/
+public/
+*.config.ts
+*.config.js
+tsconfig*.json
+vite.config.ts
+
+# Build artifacts (keep dist/)
+node_modules/
+coverage/
+
+# Development tools
+.eslintrc*
+.prettierrc*
+.vscode/
+.idea/
+
+# Git and CI
+.git/
+.github/
+.gitignore
+
+# Documentation drafts
+docs/
+examples/
+playground/
+
+# Tests
+**/*.test.*
+**/*.spec.*
+__tests__/
+jest.config.*
+vitest.config.*
+
+# Logs and cache
+*.log
+.cache/
+.temp/
+.tmp/
+
+# OS files
+.DS_Store
+Thumbs.db

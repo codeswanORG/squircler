@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.playground {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.playground h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.control-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.control-group small {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.code-sample {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.code-sample h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.code-sample pre {
+  margin: 0;
+}
+
+.code-sample code {
+  color: #e0e0e0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.examples {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.examples h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.example {
+  text-align: center;
+}
+
+.example h3 {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.features {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.features li {
+  padding: 12px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.installation {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.installation h2,
+.installation h3 {
+  color: #333;
+}
+
+.installation h2 {
+  margin-top: 0;
+}
+
+.installation pre {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.installation code {
+  color: #e0e0e0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 16px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .playground,
+  .examples,
+  .features,
+  .installation {
+    padding: 24px;
+  }
+  
+  .controls {
+    grid-template-columns: 1fr;
+  }
+  
+  .examples-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
